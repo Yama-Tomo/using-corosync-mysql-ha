@@ -17,8 +17,9 @@ DB-NODE1が故障してDB-NODE2にフェイルオーバーした
 2) 現マスターから取得したフルバックアップをリストア
 
 <pre>
-[DB-NODE1]# mysql -p < fullbackup.dump
+[DB-NODE1]# mysql -p &lt; fullbackup.dump
 </pre>
+
 
 ※LVMスナップショットの場合は 1)mysql起動前にデータディレクトリごと差し替えて起動すればOK
 
